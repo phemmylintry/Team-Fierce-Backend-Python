@@ -22,7 +22,7 @@ class UserCreate(APIView):
 
     @swagger_auto_schema(
         request_body=UserSerializer,
-        operation_description="Create an account to generate a token",
+        operation_description="Create an account to generate a token
     )
 
     def post(self, request, format='json'):
